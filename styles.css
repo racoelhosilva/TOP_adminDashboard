@@ -9,7 +9,7 @@ html, body, .container {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 4fr;
     row-gap: 15px;
 }
@@ -193,4 +193,130 @@ html, body, .container {
 
 .main {
     background-color: #dce1e3;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.main .projects {
+    grid-row: 1 / 3;
+    padding: 25px;
+}
+
+.main h1 {
+    color: #0b0b0b;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 32px;
+}
+
+.main .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 25px;
+    width: 100%;
+    height: 90%;
+}
+
+.main .card {
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    border-left: 15px solid #e5ae35;
+}
+
+.main .card h2 {
+    color: #0b0b0b;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.main .card p {
+    color: #5b5a57;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.main .announcements {
+    grid-row: 1 / 2;
+    padding: 25px;
+}
+
+.main .an-container {
+    background-color: white;
+    border-radius: 25px;
+}
+
+.main .announcements ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+
+}
+
+.main .an-container li {
+    padding: 0px 25px;
+}
+
+.main .an-container li h2 {
+    color: #0b0b0b;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.main .an-container li p {
+    color:#5b5a57;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.main .trending {
+    padding: 25px;
+    grid-row: 2 / 4;
+}
+
+.main .tr-container {
+    background-color: white;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.main .tr-container ul {
+    list-style-type: none;
+    padding: 5px 25px;
+}
+
+.main .tr-container li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+}
+
+.main .tr-container .tr-icon {
+    background-color: #e5ae35;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+}
+
+.main .tr-container .tr-info h2{
+    color: #0b0b0b;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.main .tr-container .tr-info p{
+    color: #5b5a57;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 12px;
 }
